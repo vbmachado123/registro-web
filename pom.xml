@@ -17,7 +17,6 @@
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
-
     <dependencies>
 
         <dependency>
@@ -145,7 +144,7 @@
                 <version>9.4.0.v20161208</version>
                 <configuration>
   		        	<httpConnector>
-        			  <port>9999</port>
+        			  <port>8181</port>
       			 	</httpConnector>
                     <scanIntervalSeconds>10</scanIntervalSeconds>
                 </configuration>

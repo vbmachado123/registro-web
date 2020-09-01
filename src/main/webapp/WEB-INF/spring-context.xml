@@ -16,7 +16,7 @@
 						http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
 
 	<jpa:repositories base-package="br.com.registro" />
-
+	<!-- /registro-web/src/main/webapp/WEB-INF/views/ -->
 	<context:component-scan base-package="br.com.registro" />
 	<mvc:annotation-driven />
 	<mvc:default-servlet-handler/>
@@ -28,7 +28,7 @@
 
 	<bean id="mysqlDS" class="org.apache.commons.dbcp.BasicDataSource">
 		<property name="username" value="root"/>
-		<property name="password" value="1234"/>
+		<property name="password" value="root"/>
 		<property name="url" value="jdbc:mysql://localhost/registro?createDatabaseIfNotExist=true&amp;useSSL=false"/>
 		<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
 	</bean>
